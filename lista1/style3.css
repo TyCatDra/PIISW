@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:20px;
+}
+
+button {
+    all: unset;
+}
+
+button {
+    width: 240px;
+    height: 128px;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 750;
+    font-family: Arial, sans-serif;
+    padding: 16px;
+    border: 1px solid aqua;
+    border-radius: 16px;
+    margin: 5px;
+    color: black;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+button:focus {
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}

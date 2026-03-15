@@ -1,0 +1,39 @@
+body {
+    background-color: gray;
+}
+
+body * {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+article {
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 2em 3em;
+}
+
+section {
+    border: 2px solid black;
+    padding: 2em 3em;
+    margin: 3em 1em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin: 2em 1em;
+}
