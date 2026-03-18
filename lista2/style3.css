@@ -1,0 +1,13 @@
+body{
+    background: #eef2f6;
+}
+.container-app{
+    margin-top: 40px;
+}
+.notes-list{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.note-item{
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+body{
+    background: #e9eef4;
+}
+.container-box{
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+}
+tfoot{
+    font-weight: bold;
+}
