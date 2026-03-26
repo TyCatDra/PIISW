@@ -40,6 +40,7 @@
                 transition: 
                     width 0.2s ease,
                     height 0.2s ease,
+                    background 0.2 ease
             }
         </style>
     </head>
@@ -54,6 +55,8 @@
                 circle.style.width = value + "px";
                 circle.style.height = value + "px";
                 circle.textContent = value + " px";
+                const lightness = 40 + ((value-10) / 490) * 45;
+                circle.style.backgroundColor = `hsl(60, 100%, ${lightness}%)`
             }
             function updateSlider(){
                 const min = slider.min;
