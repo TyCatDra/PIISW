@@ -22,11 +22,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @Import(AuditingConfiguration.class)
 class Task1 {
 
-    // START OF CHANGE 1
-    @Autowired
-    private EntityManager entityManager;
-    // END OF CHANGE 1
-
     @Autowired
     private ServerRepository serverRepository;
 
@@ -92,16 +87,14 @@ class Task1 {
     @Test
     void shouldUseOptimisticLocking() {
         Server s1 = serverRepository.save(new Server("server 1", "138.0.2.5"));
+        s1.setName("A");
+        serverRepository.saveAndFlush(s1);
 
-        entityManager.flush();
-        entityManager.clear();
-
-        Server s1Copy = serverRepository.findById(s1.getId()).get();
         Server s2 = serverRepository.findById(s1.getId()).get();
+        TestTransaction.end();
 
-        s1Copy.setName("A");
+        TestTransaction.start();
         s2.setName("B");
-        serverRepository.saveAndFlush(s1Copy);
 
         assertThrows(ObjectOptimisticLockingFailureException.class, () -> {
             serverRepository.saveAndFlush(s2);
