@@ -11,6 +11,10 @@ spring:
     init:
       platform: h2
   jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
     hibernate:
       ddl-auto: none
     generate-ddl: true
