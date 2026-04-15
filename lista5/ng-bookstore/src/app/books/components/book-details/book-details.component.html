@@ -1,0 +1,18 @@
+<div *ngIf="book">
+  <h2>{{ book.title }}</h2>
+  <p><b>Autor:</b> {{ book.author }}</p>
+  <p><b>Rok:</b> {{ book.year }}</p>
+  <p><b>Opis:</b> {{ book.description }}</p>
+
+  <h2>List of reviews:</h2>
+  <bs-review-form
+  [bookId]="book.id"
+  (reviewAdded)="loadReviews()">
+</bs-review-form>
+
+  @for (review of reviews; track review.id){
+    <bs-review-item [review]="review"></bs-review-item>
+  }
+
+  <a routerLink="/books">⬅ Back to the list</a>
+</div>

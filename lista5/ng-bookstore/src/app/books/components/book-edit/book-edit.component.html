@@ -1,0 +1,23 @@
+<form [formGroup]="form">
+    <div class="formBoxing">
+    <label for="titleInput">Title</label>
+    <input id="titleInput" formControlName="title"/>
+
+    <label for="authorInput">Author</label>
+    <input id="authorInput" formControlName="author"/>
+
+    <label for="yearInput">Year</label>
+    <input id="yearInput" type="number" formControlName="year" />
+
+    <label for="descriptionInput">Description</label>
+    <textarea id="descriptionInput" formControlName="description"></textarea>
+
+    <div class="buttonAlign">
+        <button (click)="save()" [disabled]="form.invalid || !form.dirty">
+            Save
+        </button>
+
+        <button (click)="cancel()">Cancel</button>
+    </div>
+    </div>
+</form>

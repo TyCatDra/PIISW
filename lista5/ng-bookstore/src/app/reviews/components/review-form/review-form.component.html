@@ -1,0 +1,31 @@
+<form [formGroup]="form" class="review-form">
+  <h3>Add your own review here:</h3>
+  <div>
+    <label for="rTitleInput">Title</label>
+    <input
+        id="rTitleInput"
+        type="text"
+        formControlName="title"
+        [class.error]="form.controls['title'].invalid && form.controls['title'].touched"
+    />
+
+    <label for="rDescriptionInput">Description</label>
+    <textarea
+        id="rDescriptionInput"
+        formControlName="description"
+        [class.error]="form.controls['description'].invalid && form.controls['description'].touched"
+    ></textarea>
+
+    <label for="rRateInput">Rate</label>
+    <input
+        id="rRateInput"
+        type="number"
+        formControlName="rate"
+        [class.error]="form.controls['rate'].invalid && form.controls['rate'].touched"
+    />
+
+    <button (click)="save()" [disabled]="form.invalid">
+        Save
+    </button>
+   </div>
+</form>

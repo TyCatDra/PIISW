@@ -1,0 +1,153 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Solaris",
+      "author": "Stanisław Lem",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim augue. Vestibulum sed hendrerit nisl. Sed ullamcorper tempor neque. ",
+      "year": 1961
+    },
+    {
+      "id": 2,
+      "title": "2001: A Space Odyssey",
+      "author": "Arthur C Clarke",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim augue. Vestibulum sed hendrerit nisl. Sed ullamcorper tempor neque. ",
+      "year": 1968
+    },
+    {
+      "id": 3,
+      "title": "Ubik",
+      "author": "Phillip K Dick",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim augue. Vestibulum sed hendrerit nisl. Sed ullamcorper tempor neque. ",
+      "year": 1965
+    },
+    {
+      "id": 4,
+      "title": "The Master's Voice",
+      "author": "Stanisław Lem",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim augue. Vestibulum sed hendrerit nisl. Sed ullamcorper tempor neque. ",
+      "year": 1968
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "forBook": 1,
+      "title": "Very good",
+      "description": "Indeed ...",
+      "rate": 5
+    },
+    {
+      "id": 2,
+      "forBook": 1,
+      "title": "Hmm",
+      "description": "Okay, I had a good time, but I expected something else.",
+      "rate": 3
+    },
+    {
+      "id": 3,
+      "forBook": 3,
+      "title": "Don't like it",
+      "description": "Anything is better than this.",
+      "rate": 1
+    },
+    {
+      "id": 4,
+      "forBook": 2,
+      "title": "Interesting",
+      "description": "Very interesting",
+      "rate": 4
+    },
+    {
+      "id": 5,
+      "forBook": 2,
+      "title": "Maybe",
+      "description": "Maybe not",
+      "rate": 2
+    },
+    {
+      "id": 6,
+      "forBook": 2,
+      "title": "Good",
+      "description": "Even better",
+      "rate": 3
+    },
+    {
+      "id": 7,
+      "forBook": 2,
+      "title": "Another",
+      "description": "One bites the dust",
+      "rate": 5
+    },
+    {
+      "id": 8,
+      "forBook": 2,
+      "title": "And another",
+      "description": "One gone, and another one gone",
+      "rate": 5
+    },
+    {
+      "id": 9,
+      "forBook": 2,
+      "title": "Running",
+      "description": "Out of ideas to test",
+      "rate": 2
+    },
+    {
+      "id": 10,
+      "forBook": 2,
+      "title": "Test",
+      "description": "Test test",
+      "rate": 1
+    },
+    {
+      "id": 11,
+      "forBook": 4,
+      "title": "Test",
+      "description": "Test",
+      "rate": 1
+    },
+    {
+      "id": 12,
+      "forBook": 4,
+      "title": "Test2",
+      "description": "Test",
+      "rate": 2
+    },
+    {
+      "id": 13,
+      "forBook": 4,
+      "title": "Test3",
+      "description": "Test",
+      "rate": 3
+    },
+    {
+      "id": 14,
+      "forBook": 4,
+      "title": "Test4",
+      "description": "Test",
+      "rate": 4
+    },
+    {
+      "id": 15,
+      "forBook": 4,
+      "title": "Test5",
+      "description": "Test",
+      "rate": 5
+    },
+    {
+      "id": 16,
+      "forBook": 4,
+      "title": "Test6",
+      "description": "Test",
+      "rate": 1
+    },
+    {
+      "id": 17,
+      "forBook": 4,
+      "title": "Test7",
+      "description": "Test",
+      "rate": 2
+    }
+  ]
+}
